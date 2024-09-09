@@ -22,193 +22,194 @@
                 <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
               </svg>
             </button>
-            <div class="modal__inner">
-              <div class="modal__content">
-                <h3 class="modal__title title-40">Задать вопрос</h3>
-                <form class="modal__form" id="faq-ask-form" data-modal-form="">
-                  <div class="base-input__wrapper">
-                    <div class="input-ui base-input" data-input-parent="">
-                      <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-error-container" placeholder="имя*" required="" type="text"/>
-                      <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
-                      <div class="input__reset" data-input-reset=""> 
-                        <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="base-input__wrapper">
-                    <div class="input-ui base-input" data-input-parent="">
-                      <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
-                      <div class="custom-placeholder__service"><span>e-mail </span></div>
-                      <div class="input__reset" data-input-reset=""> 
-                        <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="base-input__wrapper">
-                    <label class="textarea-ui base-textarea wide" data-input-parent="">
-                      <textarea class="textarea-input" data-input="" data-parsley-errors-container="#question-error-container" placeholder="вопрос*" required=""></textarea>
-                      <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
-                      <div class="input__reset" data-input-reset=""> 
-                        <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="image-input">
-                    <label class="image-input__label" data-drop-zone="">
-                      <input class="hidden-input" type="file" accept="image/*" name="image-input" id="image-input" multiple="multiple"/>
-                      <div class="image-input__content">
-                        <div class="image-input__icon">
-                          <svg width="81" height="80" viewbox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33 27.5H25.5L18 35.0676H5.5V67.5H60.5V56.2838" stroke="#242424" stroke-width="1.5"></path>
-                            <circle cx="33" cy="50" r="7.5" stroke="#242424" stroke-width="1.5"></circle>
-                            <path d="M45.5 27.5H60.5M75.5 27.5H60.5M60.5 27.5V12.5M60.5 27.5V42.5" stroke="#242424" stroke-width="1.5"></path>
+            <div class="modal__layout-inner">
+              <div class="modal__inner">
+                <div class="modal__content">
+                  <h3 class="modal__title title-40">Задать вопрос</h3>
+                  <form class="modal__form" id="faq-ask-form" data-modal-form="">
+                    <div class="base-input__wrapper">
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-error-container" placeholder="имя*" required="" type="text"/>
+                        <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
+                        <div class="input__reset" data-input-reset=""> 
+                          <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
                           </svg>
                         </div>
-                        <div class="image-input__desc"> 
-                          <p class="image-input__title text-16-bold">Добавить фотографии</p>
-                          <p class="image-input__subtitle text-16">перетащите изображения в эту область</p>
-                        </div>
                       </div>
-                    </label>
-                    <ul class="faq-card__attachments">
-                      <li class="faq-card__attachments-item"> 
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="faq-card__attachments-item"> 
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="faq-card__attachments-item"> 
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="faq-card__attachments-item"> 
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="faq-card__attachments-item"> 
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    <p class="image-input__limit text-14">Вы можете загрузить до 5 фото формата jpg или jpeg. Максимальный размер – 10 Мб.</p>
-                  </div>
-                  <div class="video-input">
-                    <label class="video-input__label" data-drop-zone="">
-                      <input class="hidden-input" type="file" accept="video/*" name="video-input" id="video-input"/>
-                      <div class="video-input__content">
-                        <div class="video-input__icon">
-                          <svg width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M37 27.5H29.5H9.5V37.5V42.5L2 35V60L9.5 52.5V57.5V67.5H64.5V56.2838" stroke="#242424" stroke-width="1.5"></path>
-                            <path d="M49.5 27.5H64.5M79.5 27.5H64.5M64.5 27.5V12.5M64.5 27.5V42.5" stroke="#242424" stroke-width="1.5"></path>
+                    </div>
+                    <div class="base-input__wrapper">
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
+                        <div class="custom-placeholder__service"><span>e-mail </span></div>
+                        <div class="input__reset" data-input-reset=""> 
+                          <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
                           </svg>
                         </div>
-                        <div class="video-input__desc"> 
-                          <p class="video-input__title text-16-bold">Добавить видео</p>
-                        </div>
                       </div>
-                    </label>
-                    <ul class="faq-card__attachments">
-                      <li class="faq-card__attachments-item">
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="video-plug">
-                            <svg width="36" height="22" viewbox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect y="0.000183105" width="36" height="22" rx="8" fill="#DB2E27"></rect>
-                              <path d="M21.6 11.0002L14.4 15.0335L14.4 6.96686L21.6 11.0002Z" fill="white"></path>
+                    </div>
+                    <div class="base-input__wrapper">
+                      <label class="textarea-ui base-textarea wide" data-input-parent="">
+                        <textarea class="textarea-input" data-input="" data-parsley-errors-container="#question-error-container" placeholder="вопрос*" required=""></textarea>
+                        <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
+                        <div class="input__reset" data-input-reset=""> 
+                          <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="image-input">
+                      <label class="image-input__label" data-drop-zone="">
+                        <input class="hidden-input" type="file" accept="image/*" name="image-input" id="image-input" multiple="multiple"/>
+                        <div class="image-input__content">
+                          <div class="image-input__icon">
+                            <svg width="81" height="80" viewbox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M33 27.5H25.5L18 35.0676H5.5V67.5H60.5V56.2838" stroke="#242424" stroke-width="1.5"></path>
+                              <circle cx="33" cy="50" r="7.5" stroke="#242424" stroke-width="1.5"></circle>
+                              <path d="M45.5 27.5H60.5M75.5 27.5H60.5M60.5 27.5V12.5M60.5 27.5V42.5" stroke="#242424" stroke-width="1.5"></path>
                             </svg>
                           </div>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
+                          <div class="image-input__desc"> 
+                            <p class="image-input__title text-16-bold">Добавить фотографии</p>
+                            <p class="image-input__subtitle text-16 desktop">перетащите изображения в эту область</p>
                           </div>
                         </div>
-                      </li>
-                      <li class="faq-card__attachments-item">
-                        <div class="attached-picture">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
-                          </picture>
-                          <div class="video-plug">
-                            <svg width="36" height="22" viewbox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect y="0.000183105" width="36" height="22" rx="8" fill="#DB2E27"></rect>
-                              <path d="M21.6 11.0002L14.4 15.0335L14.4 6.96686L21.6 11.0002Z" fill="white"></path>
+                      </label>
+                      <ul class="faq-card__attachments">
+                        <li class="faq-card__attachments-item"> 
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="faq-card__attachments-item"> 
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="faq-card__attachments-item"> 
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="faq-card__attachments-item"> 
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="faq-card__attachments-item"> 
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <p class="image-input__limit text-14">Вы можете загрузить до 5 фото формата jpg или jpeg. Максимальный размер – 10 Мб.</p>
+                    </div>
+                    <div class="video-input">
+                      <label class="video-input__label" data-drop-zone="">
+                        <input class="hidden-input" type="file" accept="video/*" name="video-input" id="video-input"/>
+                        <div class="video-input__content">
+                          <div class="video-input__icon">
+                            <svg width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M37 27.5H29.5H9.5V37.5V42.5L2 35V60L9.5 52.5V57.5V67.5H64.5V56.2838" stroke="#242424" stroke-width="1.5"></path>
+                              <path d="M49.5 27.5H64.5M79.5 27.5H64.5M64.5 27.5V12.5M64.5 27.5V42.5" stroke="#242424" stroke-width="1.5"></path>
                             </svg>
                           </div>
-                          <div class="remove-btn">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
-                            </svg>
+                          <div class="video-input__desc"> 
+                            <p class="video-input__title text-16-bold">Добавить видео</p>
                           </div>
                         </div>
-                      </li>
-                    </ul>
-                  </div>
-                </form>
+                      </label>
+                      <ul class="faq-card__attachments">
+                        <li class="faq-card__attachments-item">
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="video-plug attachment">
+                              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.8574 9.99972L3.57171 17.8569L3.57171 2.14258L17.8574 9.99972Z" fill="white"></path>
+                              </svg>
+                            </div>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="faq-card__attachments-item">
+                          <div class="attached-picture">
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                            </picture>
+                            <div class="video-plug attachment">
+                              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.8574 9.99972L3.57171 17.8569L3.57171 2.14258L17.8574 9.99972Z" fill="white"></path>
+                              </svg>
+                            </div>
+                            <div class="remove-btn">
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.16637 6.16639L12 12M17.8336 17.8337L12 12M12 12L17.8336 6.16639M12 12L6.16637 17.8337" stroke="#242424" stroke-width="1.5"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="modal__agreement text-14">Нажимая на кнопку «Отправить», я соглашаюсь на получение информации и уведомлений от интернет-сайта, а также принимаю <a class="underlined-link" href="#">условия политики конфиденциальности</a>.</p>
+                  </form>
+                </div>
               </div>
-            </div>
-            <div class="modal__bottom"> 
-              <div class="modal__captcha">captcha</div>
-              <button class="button button_blue" type="submit" form="faq-ask-form">
-                <div class="button__text text-16-bold">отправить вопрос</div>
-              </button>
+              <div class="modal__bottom"> 
+                <div class="modal__captcha">captcha</div>
+                <button class="button button_blue" type="submit" form="faq-ask-form">
+                  <div class="button__text text-16-bold">отправить вопрос</div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -391,11 +392,14 @@
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 1.875V22.125H5.25V1.875H3.75ZM9 8.625V22.125H10.5V8.625H9ZM14.25 22.125V4.875H15.75V22.125H14.25ZM19.5 8.625V22.125H21V8.625H19.5Z" fill="#242424"></path>
                     </svg>
                     <div class="header__stat-count">
-                       7</div></a><a class="header__profile" href="#">
+                       7</div></a>
+                  <button class="header__profile" data-modal-btn="auth">
                     <svg class="header__profile-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="stroke" d="M15.445 5.69492C15.445 7.59749 13.9027 9.13983 12.0001 9.13983C10.0975 9.13983 8.55518 7.59749 8.55518 5.69492C8.55518 3.79234 10.0975 2.25 12.0001 2.25C13.9027 2.25 15.445 3.79234 15.445 5.69492Z" stroke="#242424" stroke-width="1.5"></path>
                       <path class="fill" d="M19.2875 17.8754L18.5556 18.0392L19.2875 17.8754ZM18.9588 19.8416L19.1225 20.5736L20.5863 20.2461L20.4226 19.5142L18.9588 19.8416ZM4.30933 19.6779L3.57742 19.5142L3.37301 20.4279H4.30933V19.6779ZM4.71254 17.8754L5.44445 18.0392L4.71254 17.8754ZM14.0975 19.6779L14.6278 20.2082V19.1476L14.0975 19.6779ZM18.5556 18.0392L18.9588 19.8416L20.4226 19.5142L20.0194 17.7117L18.5556 18.0392ZM5.04124 19.8416L5.44445 18.0392L3.98063 17.7117L3.57742 19.5142L5.04124 19.8416ZM4.30933 20.4279H14.0975V18.9279H4.30933V20.4279ZM14.6278 19.1476L12.1808 16.7006L11.1201 17.7612L13.5671 20.2082L14.6278 19.1476ZM13.5671 19.1476L11.1201 21.5946L12.1808 22.6553L14.6278 20.2082L13.5671 19.1476ZM12 12.7881C15.145 12.7881 17.869 14.9701 18.5556 18.0392L20.0194 17.7117C19.1795 13.9573 15.8472 11.2881 12 11.2881V12.7881ZM12 11.2881C8.15277 11.2881 4.8205 13.9573 3.98063 17.7117L5.44445 18.0392C6.13102 14.9701 8.85503 12.7881 12 12.7881V11.2881Z" fill="#242424"></path>
-                    </svg></a></div>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -450,7 +454,7 @@
               <div class="faq-template"> 
                 <div class="faq-cards"> 
                   <!--/faq card 1-->
-                  <div class="faq-card">
+                  <div class="faq-card" data-content-wrapper="answers">
                     <div class="faq-card__header"> 
                       <div class="faq-card__header-person text-16-bold">Георгий</div>
                       <div class="faq-card__header-date text-16">28 апр 2024</div>
@@ -471,20 +475,63 @@
                           <div class="faq-card__product-model text-16-bold">Аппарат аргонодуговой сварки АВРОРА Система 200 ПУЛЬС второго поколенияАппарат аргонодуговой сварки АВРОРА Система 200 ПУЛЬС второго поколенияАппарат аргонодуговой сварки АВРОРА Система 200 ПУЛЬС второго поколенияАппарат аргонодуговой сварки АВРОРА Система 200 ПУЛЬС второго поколения</div></a>
                       </div>
                     </div>
-                    <div class="faq-card__answers">
+                    <div class="faq-card__answers" data-content-wrapper="form">
                       <div class="faq-card__answers-header"> 
-                        <button class="faq-card__answers-btn active"><span class="text-16-bold">скрыть ответы</span><span class="faq-card__answers-divider"></span><span class="faq-card__answers-counter text-16">1</span><span class="faq-card__answers-icon"> 
+                        <button class="faq-card__answers-btn active" data-show-content="answers"><span class="text-16-bold" data-btn-text>скрыть ответы</span><span class="faq-card__answers-divider"></span><span class="faq-card__answers-counter text-16">1</span><span class="faq-card__answers-icon">
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
-                        <button class="faq-card__answers-btn"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon"> 
+                        <button class="faq-card__answers-btn" data-show-content="form"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon"> 
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
                       </div>
+                      <form class="answer-form hide" id="answer-form-1" data-content="form">
+                        <h3 class="answer-form__title title-24">ответить пользователю ГЕОРГИЙ</h3>
+                        <div class="answer-form__inputs">
+                          <div class="base-input__wrapper answer-form__reply">
+                            <label class="textarea-ui base-textarea wide answer-form__reply" data-input-parent="">
+                              <textarea class="textarea-input answer-form__reply" data-input="" data-parsley-errors-container="#answer-1-error-container" placeholder="вопрос*" required=""></textarea>
+                              <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
+                              <div class="input__reset" data-input-reset=""> 
+                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="base-input__wrapper">
+                            <div class="input-ui base-input" data-input-parent="">
+                              <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-1-error-container" placeholder="имя*" required="" type="text"/>
+                              <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
+                              <div class="input__reset" data-input-reset=""> 
+                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="base-input__wrapper">
+                            <div class="input-ui base-input" data-input-parent="">
+                              <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-1-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
+                              <div class="custom-placeholder__service"><span>e-mail </span></div>
+                              <div class="input__reset" data-input-reset=""> 
+                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="answer-form__agreement text-20">Нажимая на кнопку «Отправить», я соглашаюсь на получение информации и уведомлений от интернет-сайта, а также принимаю <a class="underlined-link" href="#">условия политики конфиденциальности</a>.</p>
+                          <div class="answer-form__captcha">captcha </div>
+                          <button class="button button_blue answer-form__submit" type="submit" form="answer-form-1">
+                            <div class="button__text text-16-bold">отправить</div>
+                          </button>
+                        </div>
+                      </form>
                     </div>
-                    <div class="faq-card__answers-list">
-                      <div class="faq-card__answer faq-card__answer_official">
+                    <div class="faq-card__answers-list" data-content="answers">
+                      <div class="faq-card__answer faq-card__answer_official" data-content-wrapper="form">
                         <div class="faq-card__answer-header"> 
                           <div class="faq-card__answer-author"> 
                             <div class="faq-card__answer-avatar">
@@ -515,30 +562,73 @@
                           <div class="faq-card__header-date text-16">28 апр 2024</div>
                         </div>
                         <div class="faq-card__text text-20">Рабочее давление краскопульта? Напряжение без нагрузки не информативно. В видео всё сказано верно. Passat в отличие от масляных моделей поршневых компрессоров не имеет ограничений по времени непрерывной работы. Только межсервисный интервал 1200ч.</div>
-                        <button class="faq-card__answers-btn"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon rotate">
+                        <button class="faq-card__answers-btn" data-show-content="form"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon">
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
+                        <form class="answer-form hide" id="answer-form-2" data-content="form">
+                          <h3 class="answer-form__title title-24">ответить пользователю владимир</h3>
+                          <div class="answer-form__inputs">
+                            <div class="base-input__wrapper answer-form__reply">
+                              <label class="textarea-ui base-textarea wide answer-form__reply" data-input-parent="">
+                                <textarea class="textarea-input answer-form__reply" data-input="" data-parsley-errors-container="#answer-2-error-container" placeholder="вопрос*" required=""></textarea>
+                                <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="base-input__wrapper">
+                              <div class="input-ui base-input" data-input-parent="">
+                                <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-2-error-container" placeholder="имя*" required="" type="text"/>
+                                <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="base-input__wrapper">
+                              <div class="input-ui base-input" data-input-parent="">
+                                <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-2-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
+                                <div class="custom-placeholder__service"><span>e-mail </span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="answer-form__agreement text-20">Нажимая на кнопку «Отправить», я соглашаюсь на получение информации и уведомлений от интернет-сайта, а также принимаю <a class="underlined-link" href="#">условия политики конфиденциальности</a>.</p>
+                            <div class="answer-form__captcha">captcha </div>
+                            <button class="button button_blue answer-form__submit" type="submit" form="answer-form-2">
+                              <div class="button__text text-16-bold">отправить</div>
+                            </button>
+                          </div>
+                        </form>
                       </div>
                       <!--///faq card 2-->
                     </div>
                   </div>
-                  <div class="faq-card">
+                  <div class="faq-card" data-content-wrapper="answers">
                     <div class="faq-card__header"> 
                       <div class="faq-card__header-person text-16-bold">Олег</div>
                       <div class="faq-card__header-date text-16">28 апр 2024</div>
                     </div>
                     <div class="faq-card__text text-20">рабочее давление и расход краскопульта 210-310 окрас в основном идет не интенсивно?
                       <ul class="faq-card__attachments">
-                        <li class="faq-card__attachments-item"><a class="faq-card__attachment photo" href="#"> 
+                        <li class="faq-card__attachments-item"><a class="faq-card__attachment photo" data-fancybox="faq-gallery" href="images/about-features-1.jpg"> 
                             <picture class="picture">
                               <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
                               <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
                             </picture></a></li>
-                        <li class="faq-card__attachments-item"><a class="faq-card__attachment video" href="#"> 
+                        <li class="faq-card__attachments-item"><a class="faq-card__attachment video" data-fancybox="faq-gallery" href="images/wineberry_video.mp4"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb.webp 1x" alt="faq-card-attachment-thumb.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb.jpg 1x" alt="faq-card-attachment-thumb.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb.jpg" alt="faq-card-attachment-thumb.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/faq-card-attachment-thumb-2.webp 1x" alt="faq-card-attachment-thumb-2.jpg"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/faq-card-attachment-thumb-2.jpg 1x" alt="faq-card-attachment-thumb-2.jpg"/><img class="picture__img lazyload" data-src="images/faq-card-attachment-thumb-2.jpg" alt="faq-card-attachment-thumb-2.jpg"/>
                             </picture>
                             <div class="video-plug">
                               <svg width="36" height="22" viewbox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -563,20 +653,63 @@
                           <div class="faq-card__product-model text-16-bold">Аппарат аргонодуговой сварки АВРОРА Система 200 ПУЛЬС второго поколения</div></a>
                       </div>
                     </div>
-                    <div class="faq-card__answers">
-                      <div class="faq-card__answers-header"> 
-                        <button class="faq-card__answers-btn active"><span class="text-16-bold">скрыть ответы</span><span class="faq-card__answers-divider"></span><span class="faq-card__answers-counter text-16">2</span><span class="faq-card__answers-icon"> 
+                    <div class="faq-card__answers" data-content-wrapper="form">
+                      <div class="faq-card__answers-header">
+                        <button class="faq-card__answers-btn active" data-show-content="answers"><span class="text-16-bold" data-btn-text>скрыть ответы</span><span class="faq-card__answers-divider"></span><span class="faq-card__answers-counter text-16">2</span><span class="faq-card__answers-icon">
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
-                        <button class="faq-card__answers-btn"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon"> 
+                        <button class="faq-card__answers-btn" data-show-content="form"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon"> 
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
                       </div>
+                      <form class="answer-form hide" id="answer-form-3" data-content="form">
+                        <h3 class="answer-form__title title-24">ответить пользователю ОЛЕГ</h3>
+                        <div class="answer-form__inputs">
+                          <div class="base-input__wrapper answer-form__reply">
+                            <label class="textarea-ui base-textarea wide answer-form__reply" data-input-parent="">
+                              <textarea class="textarea-input answer-form__reply" data-input="" data-parsley-errors-container="#answer-3-error-container" placeholder="вопрос*" required=""></textarea>
+                              <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
+                              <div class="input__reset" data-input-reset=""> 
+                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="base-input__wrapper">
+                            <div class="input-ui base-input" data-input-parent="">
+                              <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-3-error-container" placeholder="имя*" required="" type="text"/>
+                              <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
+                              <div class="input__reset" data-input-reset=""> 
+                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="base-input__wrapper">
+                            <div class="input-ui base-input" data-input-parent="">
+                              <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-3-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
+                              <div class="custom-placeholder__service"><span>e-mail </span></div>
+                              <div class="input__reset" data-input-reset=""> 
+                                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="answer-form__agreement text-20">Нажимая на кнопку «Отправить», я соглашаюсь на получение информации и уведомлений от интернет-сайта, а также принимаю <a class="underlined-link" href="#">условия политики конфиденциальности</a>.</p>
+                          <div class="answer-form__captcha">captcha </div>
+                          <button class="button button_blue answer-form__submit" type="submit" form="answer-form-3">
+                            <div class="button__text text-16-bold">отправить</div>
+                          </button>
+                        </div>
+                      </form>
                     </div>
-                    <div class="faq-card__answers-list">
-                      <div class="faq-card__answer faq-card__answer_official">
+                    <div class="faq-card__answers-list" data-content="answers">
+                      <div class="faq-card__answer faq-card__answer_official" data-content-wrapper="form">
                         <div class="faq-card__answer-header"> 
                           <div class="faq-card__answer-author"> 
                             <div class="faq-card__answer-avatar">
@@ -607,18 +740,61 @@
                           <div class="faq-card__header-date text-16">28 апр 2024</div>
                         </div>
                         <div class="faq-card__text text-20">Рабочее давление краскопульта? Напряжение без нагрузки не информативно. В видео всё сказано верно. Passat в отличие от масляных моделей поршневых компрессоров не имеет ограничений по времени непрерывной работы. Только межсервисный интервал 1200ч.</div>
-                        <button class="faq-card__answers-btn"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon rotate">
+                        <button class="faq-card__answers-btn" data-show-content="form"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon">
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
+                        <form class="answer-form hide" id="answer-form-4" data-content="form">
+                          <h3 class="answer-form__title title-24">ответить пользователю владимир</h3>
+                          <div class="answer-form__inputs">
+                            <div class="base-input__wrapper answer-form__reply">
+                              <label class="textarea-ui base-textarea wide answer-form__reply" data-input-parent="">
+                                <textarea class="textarea-input answer-form__reply" data-input="" data-parsley-errors-container="#answer-4-error-container" placeholder="вопрос*" required=""></textarea>
+                                <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="base-input__wrapper">
+                              <div class="input-ui base-input" data-input-parent="">
+                                <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-4-error-container" placeholder="имя*" required="" type="text"/>
+                                <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="base-input__wrapper">
+                              <div class="input-ui base-input" data-input-parent="">
+                                <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-4-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
+                                <div class="custom-placeholder__service"><span>e-mail </span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="answer-form__agreement text-20">Нажимая на кнопку «Отправить», я соглашаюсь на получение информации и уведомлений от интернет-сайта, а также принимаю <a class="underlined-link" href="#">условия политики конфиденциальности</a>.</p>
+                            <div class="answer-form__captcha">captcha </div>
+                            <button class="button button_blue answer-form__submit" type="submit" form="answer-form-4">
+                              <div class="button__text text-16-bold">отправить</div>
+                            </button>
+                          </div>
+                        </form>
                       </div>
-                      <div class="faq-card__answer"> 
+                      <div class="faq-card__answer" data-content-wrapper="form">
                         <div class="faq-card__answer-header"> 
                           <div class="faq-card__answer-author"> 
                             <div class="faq-card__answer-person">
                               <div class="faq-card__header-person text-16-bold">владимир</div>
                               <div class="faq-card__header-substring text-16 uppercase">
-                                <div class="faq-card__answers-icon rotate">
+                                <div class="faq-card__answers-icon">
                                   <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.276 18.8362H8.60929C5.61929 18.8362 3.19263 16.4096 3.19263 13.4196C3.19263 10.4296 5.61929 8.00291 8.60929 8.00291H20.526M20.526 8.00291L17.4167 4.89362M20.526 8.00291L17.4167 11.1122" stroke="#7F7F7F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
                                   </svg>
@@ -629,10 +805,53 @@
                           <div class="faq-card__header-date text-16">28 апр 2024</div>
                         </div>
                         <div class="faq-card__text text-20">Рабочее давление краскопульта? Напряжение без нагрузки не информативно. В видео всё сказано верно. Passat в отличие от масляных моделей поршневых компрессоров не имеет ограничений по времени непрерывной работы. Только межсервисный интервал 1200ч.</div>
-                        <button class="faq-card__answers-btn"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon rotate">
+                        <button class="faq-card__answers-btn" data-show-content="form"><span class="text-16-bold">ответить</span><span class="faq-card__answers-icon">
                             <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M2.66675 5.3335L8.00008 10.6668L13.3334 5.3335" stroke="#242424" stroke-width="1.5" stroke-linejoin="bevel"></path>
                             </svg></span></button>
+                        <form class="answer-form hide" id="answer-form-5" data-content="form">
+                          <h3 class="answer-form__title title-24">ответить пользователю владимир</h3>
+                          <div class="answer-form__inputs">
+                            <div class="base-input__wrapper answer-form__reply">
+                              <label class="textarea-ui base-textarea wide answer-form__reply" data-input-parent="">
+                                <textarea class="textarea-input answer-form__reply" data-input="" data-parsley-errors-container="#answer-5-error-container" placeholder="вопрос*" required=""></textarea>
+                                <div class="custom-placeholder__service"><span>вопрос<span class="required">&nbsp;*</span></span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="base-input__wrapper">
+                              <div class="input-ui base-input" data-input-parent="">
+                                <input class="form-input" data-input="" name="name" data-parsley-errors-container="#name-5-error-container" placeholder="имя*" required="" type="text"/>
+                                <div class="custom-placeholder__service"><span>имя<span class="required">&nbsp;*</span></span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="base-input__wrapper">
+                              <div class="input-ui base-input" data-input-parent="">
+                                <input class="form-input" data-input="" name="email" data-parsley-errors-container="#email-5-error-container" placeholder="e-mail" type="email" data-mask-phone=""/>
+                                <div class="custom-placeholder__service"><span>e-mail </span></div>
+                                <div class="input__reset" data-input-reset=""> 
+                                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.13864 5.1387L10 10.0001M14.8614 14.8614L10 10.0001M10 10.0001L14.8614 5.1387M10 10.0001L5.13864 14.8614" stroke="#7F7F7F" stroke-width="1.5"></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="answer-form__agreement text-20">Нажимая на кнопку «Отправить», я соглашаюсь на получение информации и уведомлений от интернет-сайта, а также принимаю <a class="underlined-link" href="#">условия политики конфиденциальности</a>.</p>
+                            <div class="answer-form__captcha">captcha </div>
+                            <button class="button button_blue answer-form__submit" type="submit" form="answer-form-5">
+                              <div class="button__text text-16-bold">отправить</div>
+                            </button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
